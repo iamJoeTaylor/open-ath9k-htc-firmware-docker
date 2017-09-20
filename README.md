@@ -10,3 +10,7 @@ When in the prompt you can navigate to `/source` and;
 - force clean rebuild `make -C target_firmware clean`
 
 Once built the files should be available in the host path you past in `target_firmware` directory.
+
+## Building
+
+`./build.sh` will build dependent (base/toolchain) images only if missing locally, all images can be rebuilt by setting the `$REBUILD` env variable.
