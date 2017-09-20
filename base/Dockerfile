@@ -22,11 +22,3 @@ RUN \
   && echo "Found Volume Source" \
   || git clone https://github.com/qca/open-ath9k-htc-firmware.git && \
   mv ./open-ath9k-htc-firmware /source
-
-RUN \
-  cd /source && \
-  make toolchain
-
-RUN \
-  cd /source && \
-  make -C target_firmware
